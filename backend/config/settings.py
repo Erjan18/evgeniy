@@ -111,14 +111,17 @@ CORS_ALLOW_ALL_ORIGINS = True
 CORS_ALLOW_CREDENTIALS = True
 
 # ====================== SECURITY ======================
+# ====================== SECURITY ======================
 CSRF_TRUSTED_ORIGINS = [
-    'https://*.render.com',           # ← Для Render
-    'https://historical-kg.onrender.com',  # если уже есть домен
+    'https://evgeniy-production-a3b7.up.railway.app',
+    'https://*.railway.app',
+    'https://*.up.railway.app',
 ]
 
 CSRF_COOKIE_SECURE = True
 SESSION_COOKIE_SECURE = True
 
+SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 # ====================== JAZZMIN ======================
 JAZZMIN_SETTINGS = {
     "site_title": "Исторические лица Кыргызстана",
