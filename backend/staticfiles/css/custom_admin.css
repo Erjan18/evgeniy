@@ -1,0 +1,69 @@
+
+.jazzmin-wrapper .content-wrapper,
+.jazzmin-wrapper .main-content {
+    margin-left: 0 !important;
+    padding: 30px 25px !important;
+}
+
+/* Основные контейнеры форм */
+.module, .card, .card-body, .tab-content {
+    width: 100% !important;
+    max-width: 100% !important;
+    box-sizing: border-box;
+}
+
+/* Поля ввода и селекты */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+input[type="file"],
+input[type="url"],
+textarea,
+select {
+    width: 100% !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+}
+
+/* Select2 */
+.select2-container {
+    width: 100% !important;
+}
+
+/* Row и Col в формах */
+.form-row {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    gap: 15px !important;
+    width: 100% !important;
+}
+
+.form-row > div {
+    flex: 1 1 100% !important;
+    min-width: 0 !important;
+}
+
+/* Label + Field */
+label {
+    display: block !important;
+    margin-bottom: 5px !important;
+    width: 100% !important;
+}
+
+/* Убираем горизонтальное сжатие */
+.related-widget-wrapper,
+.vTextField, .vLargeTextField {
+    width: 100% !important;
+}
+
+/* Текстовые области */
+textarea {
+    min-height: 160px !important;
+    resize: vertical;
+}
+
+/* Кнопки */
+.btn {
+    margin: 5px 5px 5px 0 !important;
+}

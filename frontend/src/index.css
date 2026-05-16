@@ -1,0 +1,83 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: 'Segoe UI', system-ui, sans-serif;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ====================== ОБЩИЕ СТИЛИ ====================== */
+.container {
+  @apply px-4 sm:px-6 lg:px-8;
+}
+
+/* Кнопки */
+.btn {
+  @apply transition-all duration-200 active:scale-95 font-medium;
+}
+
+/* Карточки */
+.card {
+  @apply transition-all duration-300 hover:-translate-y-2 active:scale-[0.98];
+}
+
+/* ====================== АДАПТИВНОСТЬ ====================== */
+
+/* Мобильные устройства */
+@media (max-width: 640px) {
+  h1 {
+    font-size: 2.25rem;
+    line-height: 1.1;
+  }
+  
+  h2 {
+    font-size: 1.75rem;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+  }
+
+  .hero-title {
+    font-size: 2.4rem;
+  }
+}
+
+/* Планшеты */
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 2.8rem;
+  }
+}
+
+/* Улучшение форм (предотвращение зума на iOS) */
+input, textarea, select {
+  font-size: 16px !important; /* важно для мобильных */
+}
+
+/* Красивые карточки исторических лиц */
+.figure-card {
+  @apply bg-white rounded-3xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300;
+}
+
+.figure-image {
+  @apply w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105;
+}
+
+/* Подвал */
+footer {
+  @apply text-sm;
+}
+
+/* Улучшение отступов на мобильных */
+section {
+  @apply py-12 md:py-16;
+}
+
+/* Фикс для длинного текста в биографиях */
+.prose {
+  @apply text-gray-700 leading-relaxed;
+}
